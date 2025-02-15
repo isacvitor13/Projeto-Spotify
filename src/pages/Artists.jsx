@@ -1,4 +1,4 @@
-import ItensList from './ItensList'
+import ItensList from '../components/ItensList'
 import { artistArray } from '../../assets/database/artists'
 const Artists = () => {
     return (

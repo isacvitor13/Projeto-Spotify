@@ -1,4 +1,4 @@
-import ItensList from "./ItensList"
+import ItensList from "../components/ItensList"
 import { songsArray } from "../../assets/database/songs"
 const Songs = () => {
     return (

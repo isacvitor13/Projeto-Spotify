@@ -3,10 +3,10 @@ import Header from './components/Header.jsx'
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Artists from "./components/Artists.jsx"
-import Artist from "./components/Artist.jsx"
-import Songs from "./components/Songs.jsx"
-import Song from "./components/Song.jsx"
+import Artists from "./pages/Artists.jsx"
+import Artist from "./pages/Artist.jsx"
+import Songs from "./pages/Songs.jsx"
+import Song from "./pages/Song.jsx"
 
 function App() {
 
