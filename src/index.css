@@ -241,8 +241,7 @@ img {
   height: 40svh;
   background-size: cover;
   background-position-y: 20%;
-  background-image: linear-gradient(to bottom, var(--_shade), var(--_shade)),
-    url(https://i.scdn.co/image/ab67618600001016909a162796dbc3629a1fadeb);
+ 
 }
 
 .artist__title {

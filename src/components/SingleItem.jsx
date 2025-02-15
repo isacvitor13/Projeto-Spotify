@@ -1,24 +1,27 @@
 import { FaPlayCircle } from "react-icons/fa";
-
-const SingleItem = () => {
+import { Link } from "react-router-dom";
+const SingleItem = ({ image, name, artist, idPath, id }) => {
     return (
 
-        <div className='single-item'>
+        <Link to={`${idPath}/${id}`} className='single-item'>
             <div className="single-item__div-image-button">
                 <div className="single-item__div-image">
                     <img
                         className='single-item__image'
-                        src='https://i.scdn.co/image/ab676161000051744dcd8a3bff84cd7703892cf4'
-                        alt='Henrique & Juliano'
+                        src={image}
+                        alt={name}
                     />
                 </div>
                 <FaPlayCircle className="single-item__icon" />
             </div>
+
             <div className="single-item__texts">
-                <p className="single-item__title">Henrique & Juliano</p>
-                <p className="single-item__type">Artista</p>
+                <div className="single-item__2lines">
+                    <p className="single-item__title">{name}</p>
+                    <p className="single-item__type">{artist ?? 'Artista'}</p>
+                </div>
             </div>
-        </div>
+        </Link>
 
     )
 }
