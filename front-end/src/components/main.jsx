@@ -1,4 +1,4 @@
-import ItensList from "./ItensList"
+import ItensList from "./ItensList.jsx"
 import { artistArray } from '../../assets/database/artists.js'
 import { songsArray } from '../../assets/database/songs.js'
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
                 idPath='/artist'
                 itens={5}
                 itensArray={artistArray} />
-                
+
 
             <ItensList
                 title='Músicas'

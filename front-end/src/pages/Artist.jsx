@@ -6,13 +6,14 @@ import SongsList from "../components/SongList"
 const Artist = () => {
 
     const { id } = useParams()
-    const {name,banner} = artistArray.filter((curretArtist) => curretArtist.id == id)[0]
+    const {name,banner} = artistArray.filter((curretArtist) => curretArtist._id == id)[0]
 
     const songsFromArtistArray = songsArray.filter((currentSong) => currentSong.artist === name)
 
     const randomIndex = Math.floor(Math.random() * (songsFromArtistArray.length - 1))
 
-    const randomIdFromArtist = songsFromArtistArray[randomIndex].id
+    const randomIdFromArtist = songsFromArtistArray[randomIndex]._id
+    
     return (
         <div className="artist">
             <div className="artist__header" style={{ backgroundImage: `linear-gradient(to bottom, var(--_shade), var(--_shade)),url(${banner})` }}>
